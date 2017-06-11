@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Emoji2Vec Visualization | Gaole Meng</title>
+  
+  
+  <!--link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.10.0/styles/github-gist.min.css"-->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.10.0/styles/github-gist.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+<div class="Shell">
+    <aside class='SideBar'>
+    <section class='avatar' style="background-image: url(haha.PNG)">
+        <div class='av-pic' style="background-image: url(logo.png)">
+        </div>
+    </section>
+    <section class='menu'>
+        <div>Gaole Meng</div>
+        
+        <ul>
+          
+            <a href="/" class="Btn">
+              <li>Home</li>
+            </a>  
+          
+            <a href="/archives/" class="Btn">
+              <li>Projects</li>
+            </a>  
+          
+            <a href="/about/" class="Btn">
+              <li>About</li>
+            </a>  
+          
+        </ul>
+    </section>
+    <section class="media">
+        
+            
+                <a href="https://github.com/GaoleMeng">
+                    <img src="/assets/github.svg" />
+                </a>
+            
+        
+            
+                <a href="https://www.facebook.com/profile.php?id=100004252391322">
+                    <img src="/assets/facebook.svg" />
+                </a>
+            
+        
+    </section>
+</aside>
+
+    <div class="container">
+        <div data-pager-shell>
+            <div>
+  <article class='ContentView'>
+    <header class='PageTitle'>
+        <h1>Emoji2Vec Visualization</h1>
+    </header>
+
+    <section>
+      <h2 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h2><p>The Emoji Cloud is a visualization of the semantic space of emojis, based on a recent <a href="https://aaai.org/ocs/index.php/ICWSM/ICWSM17/paper/view/15705" target="_blank" rel="external">paper at ICWSM</a>. Embeddings of emojis are trained using <a href="https://github.com/tangjianpku/LINE" target="_blank" rel="external">LINE</a> and the 3D layout is learned using <a href="https://github.com/lferry007/LargeVis/" target="_blank" rel="external">LargeVis</a>.</p>
+<p>Word2vec is a group of related models that are used to produce word embeddings. Emoji2vec has the smilar idea, which use deep neural network to train the model and get the middle layer as the representation of word vector.</p>
+<p>Word vectors are positioned in the vector space such that words that share common contexts in the corpus are located in close proximity to one another in the space. As emoji can be treated as word too, the model can be transformed to form the embedding of emoji.</p>
+<div align="center"><br><img src="/2017/06/08/Emoji2vec-visualization/Emoji.png" width="90%" alt="NLP" align="center"><br></div>
+
+<h2 id="Emoji-Cloud"><a href="#Emoji-Cloud" class="headerlink" title="Emoji Cloud"></a>Emoji Cloud</h2><p>Since that emoji vector after trained have very high dimension,s the embedding needs to be reduced dimension, in which I used LargeVis, which is a method that use the random projection trees and other techniques to find the approximate representation of high dimensional vectors in low dimension. Here I set the dimension to 3.</p>
+<p>The 3D-model visulization is created by Three.js. Which supports interaction and searching function. The model can be seen and played <a href="https://emojicloud3d.herokuapp.com/" target="_blank" rel="external">here</a>. </p>
+<div align="center"><br><img src="/2017/06/08/Emoji2vec-visualization/haha.png" width="90%" alt="NLP" align="center"><br></div>
+
+
+
+
+
+
+
+
+      
+
+    </section>
+    
+      <section class='ArticleMeta'>
+          <div>
+            发布于&nbsp;
+            <time datetime="2017-06-09T02:02:52.000Z" itemprop="datePublished">
+              2017-06-08
+            </time>
+          </div>
+          
+      </section>
+    
+    
+</article>
+
+  
+</div>
+
+            <footer>
+    <div>© 2016 - Gaole Meng </div>
+    <div>
+    Powered by Hexo
+    </div>
+</footer>
+
+        </div>
+    </div>
+</div>
+<script src="/js/pager/dist/singlepager.js"></script>
+<script>
+var sp = new Pager('data-pager-shell')
+
+</script>
+</body>
+</html>
