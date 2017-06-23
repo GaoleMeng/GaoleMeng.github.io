@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gaole Meng</title>
+  
+  
+  <!--link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.10.0/styles/github-gist.min.css"-->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.10.0/styles/github-gist.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+<div class="Shell">
+    <aside class='SideBar'>
+    <section class='avatar' style="background-image: url(/images/haha.png)">
+        <div class='av-pic' style="background-image: url(/images/logo.png)">
+        </div>
+    </section>
+    <section class='menu'>
+        <div style="font-family: 'Crimson Text', serif;font-size: 20px;">Gaole Meng</div>
+        
+        <ul>
+          
+            <a href="/" class="Btn">
+              <li>Home</li>
+            </a>  
+          
+            <a href="/archives/" class="Btn">
+              <li>Projects</li>
+            </a>  
+          
+            <a href="/about/" class="Btn">
+              <li>About</li>
+            </a>  
+          
+        </ul>
+    </section>
+    <section class="media">
+        
+            
+                <a href="https://github.com/GaoleMeng">
+                    <img src="/assets/github.svg" />
+                </a>
+            
+        
+            
+                <a href="https://www.facebook.com/profile.php?id=100004252391322">
+                    <img src="/assets/facebook.svg" />
+                </a>
+            
+        
+    </section>
+</aside>
+
+    <div class="container">
+        <div data-pager-shell>
+            <ul class="Index">
+  
+  
+    <li>
+      <article class='ListView'>
+    <header class="title">
+      
+        <h1>
+          <a href="/2017/06/08/Emoji2vec-visualization/">Emoji2Vec Visualization</a>
+        </h1>
+      
+      <div class='ListMeta'>
+  <time datetime="2017-06-08T23:02:52.000Z" itemprop="datePublished">
+    2017-06-08
+  </time>
+  
+  
+</div>
+
+    </header>
+    <div>
+      
+        <h2 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h2><p>The Emoji Cloud is a visualization of the semantic space of emojis, based on a recent <a href="https://aaai.org/ocs/index.php/ICWSM/ICWSM17/paper/view/15705" target="_blank" rel="external">paper at ICWSM</a>. Embeddings of emojis are trained using <a href="https://github.com/tangjianpku/LINE" target="_blank" rel="external">LINE</a> and the 3D layout is learned using <a href="https://github.com/lferry007/LargeVis/" target="_blank" rel="external">LargeVis</a>.</p>
+<p>Word2vec is a group of related models that are used to produce word embeddings. Emoji2vec has the smilar idea, which use deep neural network to train the model and get the middle layer as the representation of word vector.</p>
+<p>Word vectors are positioned in the vector space such that words that share common contexts in the corpus are located in close proximity to one another in the space. As emoji can be treated as word too, the model can be transformed to form the embedding of emoji.</p>
+<div align="center"><br><img src="/2017/06/08/Emoji2vec-visualization/Emoji.png" width="90%" alt="NLP" align="center"><br></div>
+
+<h2 id="Emoji-Cloud"><a href="#Emoji-Cloud" class="headerlink" title="Emoji Cloud"></a>Emoji Cloud</h2><p>Since that emoji vector after trained have very high dimension,s the embedding needs to be reduced dimension, in which I used LargeVis, which is a method that use the random projection trees and other techniques to find the approximate representation of high dimensional vectors in low dimension. Here I set the dimension to 3.</p>
+<p>The 3D-model visulization is created by Three.js. Which supports interaction and searching function. The model can be seen and played <a href="https://emojicloud3d.herokuapp.com/" target="_blank" rel="external">here</a>. </p>
+<div align="center"><br><img src="/2017/06/08/Emoji2vec-visualization/haha.png" width="90%" alt="NLP" align="center"><br></div>
+
+
+
+
+
+
+
+      
+    </div>
+</article>
+
+    </li>
+  
+    <li>
+      <article class='ListView'>
+    <header class="title">
+      
+        <h1>
+          <a href="/2017/06/08/SAA-Official-Website/">SAA Official Website</a>
+        </h1>
+      
+      <div class='ListMeta'>
+  <time datetime="2017-06-08T23:02:52.000Z" itemprop="datePublished">
+    2017-06-08
+  </time>
+  
+  
+</div>
+
+    </header>
+    <div>
+      
+        <h2 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h2><p>SAA is the chinese student union for Shanghai Jiaotong University Joint Institude and the University of Michigan. The SAA official website records the activity and life of the students in the joint institude and enable students to post message and new onto the website.</p>
+<div align="center"><br><img src="/2017/06/08/SAA-Official-Website/SAA.png" width="90%" alt="NLP" align="center"><br></div>
+
+<h2 id="Current-process"><a href="#Current-process" class="headerlink" title="Current process:"></a>Current process:</h2><p>The skeleton and most of the pages are finished locally, the website is mainly written and maintained in Meteor/ React.js/ Node.js.</p>
+<p>The project is written together with <a href="https://github.com/lizihan021" target="_blank" rel="external">Zihan Li</a>, The code can seen on my github <a href="https://github.com/GaoleMeng/SAA-Website" target="_blank" rel="external">Gaole Meng</a></p>
+
+      
+    </div>
+</article>
+
+    </li>
+  
+    <li>
+      <article class='ListView'>
+    <header class="title">
+      
+        <h1>
+          <a href="/2017/06/08/NLP-Active-Learning-Word-Disambiguration/">Word Disambiguration by Active Learning</a>
+        </h1>
+      
+      <div class='ListMeta'>
+  <time datetime="2017-06-08T23:00:14.000Z" itemprop="datePublished">
+    2017-06-08
+  </time>
+  
+  
+</div>
+
+    </header>
+    <div>
+      
+        <h2 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h2><h3 id="Word-Disambiguration"><a href="#Word-Disambiguration" class="headerlink" title="Word Disambiguration"></a>Word Disambiguration</h3><p>Word disambiguration is a fun classification problem in natrual language processing, which enables the machine to distinguish the different meaning of the same word given the corpus of the word.</p>
+<h3 id="Active-Learning"><a href="#Active-Learning" class="headerlink" title="Active Learning"></a>Active Learning</h3><p>Active learning is an interesting division in machine learning, which enable the machine to require the data most uncertainty to be labeled, the uncertainty is measured by entropy.</p>
+<div align="center"><br><img src="/2017/06/08/NLP-Active-Learning-Word-Disambiguration/disa.png" width="90%" alt="NLP" align="center"><br></div>
+
+
+
+<h2 id="Experiment-Results"><a href="#Experiment-Results" class="headerlink" title="Experiment Results:"></a>Experiment Results:</h2><p>I compire the active learning accuracy with the traditional uncertainty sampling which introduce the</p>
+<div align="center"><br> <img src="/2017/06/08/NLP-Active-Learning-Word-Disambiguration/disb.png" width="90%" alt="NLP" align="center"><br></div>
+
+      
+    </div>
+</article>
+
+    </li>
+  
+    <li>
+      <article class='ListView'>
+    <header class="title">
+      
+        <h1>
+          <a href="/2017/06/08/IPA-Simulation-Platform/">IPA Simulation Platform</a>
+        </h1>
+      
+      <div class='ListMeta'>
+  <time datetime="2017-06-08T22:59:06.000Z" itemprop="datePublished">
+    2017-06-08
+  </time>
+  
+  
+</div>
+
+    </header>
+    <div>
+      
+        <h2 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h2><p>This is the project I’m currently working on in Croma Lab. The objective is to accomplish a crowdsource based online platform for people to hire crowd worker to do passive jobs.</p>
+<p><img src="/2017/06/08/IPA-Simulation-Platform/ipa.png" alt="alt text" title="IPA Simulation Platform"></p>
+<h2 id="What-is-passive-task"><a href="#What-is-passive-task" class="headerlink" title="What is passive task?"></a>What is passive task?</h2><p>By saying passive task, we must mention it’s opposite – active task. Active task is the kind of jobs that needs constant huamn efforts, like “controlling the robot to fetch a cup of water”. Which needs constant human efforts to control the robot. By contrast, passive jobs are the jobs that require little work, but need constant absorbing the information from the environment, like “make some noise when Peter comes by”.</p>
+<p>In the latest robot crowdsourcing platform, many jobs are related to passive task, which means they require less efforts than it seems. We plan to create a platform for people combine the active task and passive jobs together at the same time.</p>
+<h2 id="What-is-IPA-Platform"><a href="#What-is-IPA-Platform" class="headerlink" title="What is IPA - Platform?"></a>What is IPA - Platform?</h2><p>IPA-platform stands for the intelligent personal assistant, which is the platform that provides people with the crowdsourcing platform to do multiple passive jobs.</p>
+<p>Since passive jobs require little computation power, say, human mind, so decide to design a multi-streaming system that enables multiple streaming at the same time, which means the people can do several passive jobs together.</p>
+<h2 id="What-have-we-done"><a href="#What-have-we-done" class="headerlink" title="What have we done?"></a>What have we done?</h2><p>We have done the prototype of this platform which includes:</p>
+<h4 id="Online-simulation-platform"><a href="#Online-simulation-platform" class="headerlink" title="Online simulation platform:"></a>Online simulation platform:</h4><ol>
+<li>An online simulation platform for people to trying control virtual robot in a simulation environment before touching the real robot.</li>
+<li>We have realize the ability to add different obstacle to the environment to simulate the true situation.</li>
+</ol>
+<h4 id="Multiple-Streaming-Platform"><a href="#Multiple-Streaming-Platform" class="headerlink" title="Multiple Streaming Platform:"></a>Multiple Streaming Platform:</h4><p>This platform enables people to play the streaming in different speed and checkout different streaming at the same time.</p>
+
+      
+    </div>
+</article>
+
+    </li>
+  
+    <li>
+      <article class='ListView'>
+    <header class="title">
+      
+        <h1>
+          <a href="/2017/06/08/Cool-Compilers/">Cool Compilers</a>
+        </h1>
+      
+      <div class='ListMeta'>
+  <time datetime="2017-06-08T22:51:59.000Z" itemprop="datePublished">
+    2017-06-08
+  </time>
+  
+  
+</div>
+
+    </header>
+    <div>
+      
+        <h2 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h2><p>Cool, an acronym for Classroom Object Oriented Language, is a computer programming language designed by Alexander Aiken for use in an undergraduate compiler course project. While small enough for a one term project, Cool still has many of the features of modern programming languages, including objects, automatic memory management, strong static typing and simple reflection.</p>
+<p><img src="/2017/06/08/Cool-Compilers/compiler.png" alt="alt text" title="IPA Simulation Platform"></p>
+<p>The compiler for tool is written in C++. </p>
+<h2 id="What-is-Cool-compiler"><a href="#What-is-Cool-compiler" class="headerlink" title="What is Cool compiler?"></a>What is Cool compiler?</h2><p>Cool compiler is the compiler for Cool which includes lexical analysis, parser, semantic anslysis, code geration and reigister allocation. </p>
+<h2 id="What-have-I-done"><a href="#What-have-I-done" class="headerlink" title="What have I done?"></a>What have I done?</h2><p>I have just down the lexer for the Cool compiler, which is realized by flex syntax and C++.</p>
+
+      
+    </div>
+</article>
+
+    </li>
+  
+</ul>
+
+
+            <footer>
+    <div>© 2016 - Gaole Meng </div>
+</footer>
+
+        </div>
+    </div>
+</div>
+<script src="/js/pager/dist/singlepager.js"></script>
+<script>
+var sp = new Pager('data-pager-shell')
+
+</script>
+</body>
+</html>
